@@ -14,34 +14,56 @@ section {
 /*=============== NAVBAR ==============*/
 .nav-bar {
     width: 100%;
-    position: relative;
+    position: absolute;
     height: 3rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    z-index: 10000;
+}
+
+.logo {
+    width: 50%;
+    margin-left: 10%;
+    
+    .logo__name {
+        font-size: 1.8rem;
+    }
 }
 
 .nav__menu {
-    text-decoration: none;
-    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    width: 50%;
+    padding: 0 3rem;
 }
 
 .nav__link {
     text-decoration: none;
     list-style-type: none;
+    padding-left: 2rem;
 }
 
 .nav__text {
     text-decoration: none;
-    color: #FFF;
+    color: #121212;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
 }
 
 /*================= HERO ==================*/
 .hero {
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bg__cover {
@@ -51,5 +73,14 @@ section {
     background-repeat: no-repeat;
     object-fit: cover;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    transition: 10s ease;
+}
+
+.bg__cover::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,255,255, 0.7);
 }
