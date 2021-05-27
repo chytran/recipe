@@ -148,4 +148,21 @@ section {
   font-size: 1.4rem;
   padding-top: 0.3rem;
 }
+
+.information__container .recipe__button {
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 4px 10px;
+  margin-top: 1rem;
+  color: #121212;
+  font-size: 1.3rem;
+  -webkit-box-shadow: 2px 2px 5px #121212;
+          box-shadow: 2px 2px 5px #121212;
+}
+
+.information__container .recipe__button:hover {
+  -webkit-box-shadow: 4px 4px 5px #121212;
+          box-shadow: 4px 4px 5px #121212;
+  border: 0.5px solid #121212;
+}
 /*# sourceMappingURL=style.css.map */
