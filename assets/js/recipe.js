@@ -8,8 +8,7 @@ async function getRandomMeal() {
     const respData = await resp.json();
     const randomMeal = respData.meals[0];
 
-    console.log(randomMeal);
-
+    addMeal(randomMeal, true);
 }
 
 async function getMealById(id) {
@@ -26,4 +25,26 @@ async function getMealsBySearch(term) {
     const getMeal = respData.meals[0];
 
     console.log(getMeal);
+}
+
+function addMeal(mealData, random = false) {
+    const meal = document.createElement('div');
+    meal.classList.add('meal');
+
+    meal.innerHTML = `
+        <div class="meal__header" id="meal-header">
+            ${random ? `
+            <span class="random">Random Recipe</span>` : ''}
+            <img 
+                src="${mealData.strMealThumb}" 
+                alt="${mealData.Meal}"
+            />
+        </div>
+        <div class="meal__body" id="meal-body">
+            <h4>Veggie Veggies</h4>
+            <button class="fav-button">
+                <i class="fas fa-heart"></i>
+            </button>
+        </div>
+    `;
 }
