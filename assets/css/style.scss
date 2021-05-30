@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/*============= Variables ===============*/
+$headerDist: 3rem;
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
@@ -142,10 +145,38 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .recipes {
+        align-self: center;
+    }
+    .meal {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        margin-top: 3rem;
+    }
+
+    .real__recipe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 1rem;
+    }
     
-        .recipes {
-            display: grid;
-            grid-template-columns: 8ch auto ;
-        }
+    .meal__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .random {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .recipe__image {
+        width: 320px;
+        height: 320px;
     }
 }

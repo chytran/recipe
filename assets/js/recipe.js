@@ -1,4 +1,4 @@
-const recipeContainer = document.getElementById("container-recipe");
+const recipeContainer = document.getElementById("recipes");
 
 getRandomMeal();
 
@@ -37,6 +37,58 @@ function addMeal(mealData, random = false) {
                 ${random ? `
                 <span class="random">Random Recipe</span>` : ''}
                 <img 
+                    class="recipe__image"
+                    src="${mealData.strMealThumb}" 
+                    alt="${mealData.Meal}"
+                />
+            </div>
+            <div class="meal__body" id="meal-body">
+                <h4>${mealData.Meal}</h4>
+                <button class="fav-button">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        </div>
+        <div class="real__recipe">
+            <div class="meal__header" id="meal-header">
+                ${random ? `
+                <span class="random">Random Recipe</span>` : ''}
+                <img 
+                    class="recipe__image"
+                    src="${mealData.strMealThumb}" 
+                    alt="${mealData.Meal}"
+                />
+            </div>
+            <div class="meal__body" id="meal-body">
+                <h4>${mealData.Meal}</h4>
+                <button class="fav-button">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        </div>
+        <div class="real__recipe">
+            <div class="meal__header" id="meal-header">
+                ${random ? `
+                <span class="random">Random Recipe</span>` : ''}
+                <img 
+                    class="recipe__image"
+                    src="${mealData.strMealThumb}" 
+                    alt="${mealData.Meal}"
+                />
+            </div>
+            <div class="meal__body" id="meal-body">
+                <h4>${mealData.Meal}</h4>
+                <button class="fav-button">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        </div>
+        <div class="real__recipe">
+            <div class="meal__header" id="meal-header">
+                ${random ? `
+                <span class="random">Random Recipe</span>` : ''}
+                <img 
+                    class="recipe__image"
                     src="${mealData.strMealThumb}" 
                     alt="${mealData.Meal}"
                 />
