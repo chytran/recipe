@@ -149,11 +149,11 @@ section {
     .recipes {
         align-self: center;
     }
-    .meal {
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-        margin-top: 3rem;
-    }
+    // .meal {
+    //     display: grid;
+    //     grid-template-columns: repeat(2, 2fr);
+    //     margin-top: 3rem;
+    // }
 
     .real__recipe {
         display: flex;

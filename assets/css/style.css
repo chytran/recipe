@@ -192,14 +192,6 @@ section {
       align-self: center;
 }
 
-.hero__recipe .meal {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (2fr)[2];
-      grid-template-columns: repeat(2, 2fr);
-  margin-top: 3rem;
-}
-
 .hero__recipe .real__recipe {
   display: -webkit-box;
   display: -ms-flexbox;

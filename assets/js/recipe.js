@@ -30,12 +30,12 @@ async function getMealsBySearch(term) {
 function addMeal(mealData, random = false) {
     const meal = document.createElement('div');
     meal.classList.add('meal');
-
+    console.log(mealData);
     meal.innerHTML = `
         <div class="real__recipe">
             <div class="meal__header" id="meal-header">
                 ${random ? `
-                <span class="random">Random Recipe</span>` : ''}
+                <span class="random">${mealData.strMeal}</span>` : ''}
                 <img 
                     class="recipe__image"
                     src="${mealData.strMealThumb}" 
@@ -43,60 +43,8 @@ function addMeal(mealData, random = false) {
                 />
             </div>
             <div class="meal__body" id="meal-body">
-                <h4>${mealData.Meal}</h4>
                 <button class="fav-button">
-                    <i class="fas fa-heart"></i>
-                </button>
-            </div>
-        </div>
-        <div class="real__recipe">
-            <div class="meal__header" id="meal-header">
-                ${random ? `
-                <span class="random">Random Recipe</span>` : ''}
-                <img 
-                    class="recipe__image"
-                    src="${mealData.strMealThumb}" 
-                    alt="${mealData.Meal}"
-                />
-            </div>
-            <div class="meal__body" id="meal-body">
-                <h4>${mealData.Meal}</h4>
-                <button class="fav-button">
-                    <i class="fas fa-heart"></i>
-                </button>
-            </div>
-        </div>
-        <div class="real__recipe">
-            <div class="meal__header" id="meal-header">
-                ${random ? `
-                <span class="random">Random Recipe</span>` : ''}
-                <img 
-                    class="recipe__image"
-                    src="${mealData.strMealThumb}" 
-                    alt="${mealData.Meal}"
-                />
-            </div>
-            <div class="meal__body" id="meal-body">
-                <h4>${mealData.Meal}</h4>
-                <button class="fav-button">
-                    <i class="fas fa-heart"></i>
-                </button>
-            </div>
-        </div>
-        <div class="real__recipe">
-            <div class="meal__header" id="meal-header">
-                ${random ? `
-                <span class="random">Random Recipe</span>` : ''}
-                <img 
-                    class="recipe__image"
-                    src="${mealData.strMealThumb}" 
-                    alt="${mealData.Meal}"
-                />
-            </div>
-            <div class="meal__body" id="meal-body">
-                <h4>${mealData.Meal}</h4>
-                <button class="fav-button">
-                    <i class="fas fa-heart"></i>
+                    <i class="fad fa-heart"></i>
                 </button>
             </div>
         </div>
@@ -104,3 +52,22 @@ function addMeal(mealData, random = false) {
 
     recipeContainer.appendChild(meal);
 }
+
+function addToLS(mealId) {
+    const mealIds = getMealsFromLS();
+
+    localStorage.setItem('mealIds', JSON.stringify([...mealIds, mealId]));
+}
+
+function removeMealFromLS(mealId) {
+
+}
+
+function getMealsFromLS() {
+    const mealIds = JSON.parse(localStorage.getItem('mealIds'));
+
+    return mealIds;
+}
+
+
+
