@@ -192,7 +192,7 @@ section {
       align-self: center;
   width: 100%;
   height: 100vh;
-  padding-top: 5%;
+  padding-top: 3%;
   z-index: 1000;
 }
 
@@ -230,13 +230,16 @@ section {
 }
 
 .hero__recipe .random {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero__recipe .recipe__image {
   width: 320px;
   height: 320px;
+  cursor: pointer;
 }
 
 .hero__recipe .ingredient__title {
@@ -246,10 +249,15 @@ section {
   width: 320px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   border-bottom: 1px solid #121212;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .hero__recipe .ingredient__container {
@@ -295,6 +303,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 2rem;
 }
 
 .hero__recipe .ingredient__amount {

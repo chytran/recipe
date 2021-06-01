@@ -38,6 +38,7 @@ function addMeal(mealData, random = false) {
                 <span class="random">${mealData.strMeal}</span>` : ''}
                 <img 
                     class="recipe__image"
+                    id="recipe-image"
                     src="${mealData.strMealThumb}" 
                     alt="${mealData.Meal}"
                 />
@@ -84,8 +85,28 @@ function addMeal(mealData, random = false) {
         </div>
     `;
 
+
     recipeContainer.appendChild(meal);
+
+    const ingredientTitle = document.querySelector(".ingredient__title");
+    const ingredientContainer = document.querySelector(".ingredient__container");
+    const imageRecipe = document.getElementById("recipe-image")
+
+    imageRecipe.addEventListener("mouseout", () => {
+        ingredientTitle.style.display = "none";
+        ingredientContainer.style.display = "none";
+    })
+
+    imageRecipe.addEventListener("mouseover", () => {
+        if (ingredientTitle.style.display = "none"){
+            ingredientTitle.style.display = "flex";
+        }
+        if (ingredientContainer.style.display = "none"){
+            ingredientContainer.style.display = "flex";
+        }
+    })
 }
+
 
 // function addToLS(mealId) {
 //     const mealIds = getMealsFromLS();

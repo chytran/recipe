@@ -152,7 +152,7 @@ section {
         align-self: center;
         width: 100%;
         height: 100vh;
-        padding-top: 5%;
+        padding-top: 3%;
         z-index: 1000;
     }
     // .meal {
@@ -177,13 +177,16 @@ section {
     }
 
     .random {
-        font-size: 1.6rem;
+        font-size: 2rem;
         font-weight: 700;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
     }
 
     .recipe__image {
         width: 320px;
         height: 320px;
+        cursor: pointer;
     }
 
     .ingredient__title {
@@ -193,8 +196,10 @@ section {
         width: 320px;
         border-top-left-radius: 10px;  
         border-top-right-radius: 10px;
-        align-self: center;
         border-bottom: 1px solid #121212;
+        display: flex;
+        justify-content: center;
+        align-self: center;
     }
 
     .ingredient__container {
@@ -221,6 +226,7 @@ section {
         display: flex;
         justify-self: flex-end;
         align-items: center;
+        padding-right: 2rem;
     }
     
     .ingredient__amount {
