@@ -42,10 +42,44 @@ function addMeal(mealData, random = false) {
                     alt="${mealData.Meal}"
                 />
             </div>
-            <div class="meal__body" id="meal-body">
-                <button class="fav-button">
-                    <i class="fad fa-heart"></i>
-                </button>
+            <h2 class="ingredient__title">Ingredients</h2>
+            <div class="ingredient__container" id="ingredient-container">
+                <div className="ingredient__list">
+                    <div className="ingredient__name">${mealData.strIngredient1}</div>
+                    <div className="ingredient__name">${mealData.strIngredient2}</div>
+                    <div className="ingredient__name">${mealData.strIngredient3}</div>
+                    <div className="ingredient__name">${mealData.strIngredient4}</div>
+                    <div className="ingredient__name">${mealData.strIngredient5}</div>
+                    <div className="ingredient__name">${mealData.strIngredient6}</div>
+                    <div className="ingredient__name">${mealData.strIngredient7}</div>
+                    <div className="ingredient__name">${mealData.strIngredient8}</div>
+                    <div className="ingredient__name">${mealData.strIngredient9}</div>
+                    <div className="ingredient__name">${mealData.strIngredient10}</div>
+                    <div className="ingredient__name">${mealData.strIngredient11}</div>
+                    <div className="ingredient__name">${mealData.strIngredient12}</div>
+                    <div className="ingredient__name">${mealData.strIngredient13}</div>
+                    <div className="ingredient__name">${mealData.strIngredient14}</div>
+                    <div className="ingredient__name">${mealData.strIngredient15}</div>
+                    <div className="ingredient__name">${mealData.strIngredient16}</div>
+                </div>
+                <div className="ingredient__amount">
+                    <div className="ingredient__quantity">${mealData.strMeasure1}</div>
+                    <div className="ingredient__quantity">${mealData.strMeasure2}</div>
+                    <div className="ingredient__quantity">${mealData.strMeasure3}</div>
+                    <div className="ingredient__quantity">${mealData.strMeasure4}</div>
+                    <div className="ingredient__quantity">${mealData.strMeasure5}</div>
+                    <div className="ingredient__quantity">${mealData.strMeasure6}</div>
+                    <div className="ingredient__quantity">${mealData.strMeasure7}</div>
+                    <div className="ingredient__quantity">${mealData.strMeasure8}</div>
+                    <div className="ingredient__quantity">${mealData.strMeasure9}</div>
+                    <div className="ingredient__quantity">${mealData.strMeasure10}</div>
+                    <div className="ingredient__quantity">${mealData.strMeasure11}</div>
+                    <div className="ingredient__quantity">${mealData.strMeasure12}</div>
+                    <div className="ingredient__quantity">${mealData.strMeasure13}</div>
+                    <div className="ingredient__quantity">${mealData.strMeasure14}</div>
+                    <div className="ingredient__quantity">${mealData.strMeasure15}</div>
+                    <div className="ingredient__quantity">${mealData.strMeasure16}</div>
+                </div>
             </div>
         </div>
     `;
@@ -53,21 +87,21 @@ function addMeal(mealData, random = false) {
     recipeContainer.appendChild(meal);
 }
 
-function addToLS(mealId) {
-    const mealIds = getMealsFromLS();
+// function addToLS(mealId) {
+//     const mealIds = getMealsFromLS();
 
-    localStorage.setItem('mealIds', JSON.stringify([...mealIds, mealId]));
-}
+//     localStorage.setItem('mealIds', JSON.stringify([...mealIds, mealId]));
+// }
 
-function removeMealFromLS(mealId) {
+// function removeMealFromLS(mealId) {
 
-}
+// }
 
-function getMealsFromLS() {
-    const mealIds = JSON.parse(localStorage.getItem('mealIds'));
+// function getMealsFromLS() {
+//     const mealIds = JSON.parse(localStorage.getItem('mealIds'));
 
-    return mealIds;
-}
+//     return mealIds;
+// }
 
 
 
