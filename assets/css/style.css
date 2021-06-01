@@ -213,6 +213,12 @@ section {
   margin-top: 1rem;
 }
 
+.hero__recipe .real__recipe:before {
+  width: 330px;
+  height: 330px;
+  color: #FFF;
+}
+
 .hero__recipe .meal__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -230,10 +236,15 @@ section {
 }
 
 .hero__recipe .random {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+}
+
+.hero__recipe .hover__picture {
+  font-size: 1.2rem;
+  color: #FFF;
 }
 
 .hero__recipe .recipe__image {
@@ -250,20 +261,17 @@ section {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom: 1px solid #121212;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
 }
 
 .hero__recipe .ingredient__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -313,9 +321,9 @@ section {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-left: 2rem;
 }
 

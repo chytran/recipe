@@ -36,6 +36,7 @@ function addMeal(mealData, random = false) {
             <div class="meal__header" id="meal-header">
                 ${random ? `
                 <span class="random">${mealData.strMeal}</span>` : ''}
+                <h2 class="hover__picture">Hover over the picture!</h2>
                 <img 
                     class="recipe__image"
                     id="recipe-image"
@@ -90,12 +91,8 @@ function addMeal(mealData, random = false) {
 
     const ingredientTitle = document.querySelector(".ingredient__title");
     const ingredientContainer = document.querySelector(".ingredient__container");
-    const imageRecipe = document.getElementById("recipe-image")
-
-    imageRecipe.addEventListener("mouseout", () => {
-        ingredientTitle.style.display = "none";
-        ingredientContainer.style.display = "none";
-    })
+    const imageRecipe = document.getElementById("recipe-image");
+    const hoverText = document.querySelector(".hover__picture");
 
     imageRecipe.addEventListener("mouseover", () => {
         if (ingredientTitle.style.display = "none"){
@@ -104,6 +101,7 @@ function addMeal(mealData, random = false) {
         if (ingredientContainer.style.display = "none"){
             ingredientContainer.style.display = "flex";
         }
+        hoverText.style.display = "none";
     })
 }
 

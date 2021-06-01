@@ -168,6 +168,12 @@ section {
         flex-direction: column;
         margin-top: 1rem;
     }
+
+    .real__recipe:before {
+        width: 330px;
+        height: 330px;
+        color: #FFF;
+    }
     
     .meal__header {
         display: flex;
@@ -177,10 +183,15 @@ section {
     }
 
     .random {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 700;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
+    }
+
+    .hover__picture {
+        font-size: 1.2rem;
+        color: #FFF;
     }
 
     .recipe__image {
@@ -197,13 +208,13 @@ section {
         border-top-left-radius: 10px;  
         border-top-right-radius: 10px;
         border-bottom: 1px solid #121212;
-        display: flex;
+        display: none;
         justify-content: center;
         align-self: center;
     }
 
     .ingredient__container {
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         flex-direction: row;
@@ -232,7 +243,7 @@ section {
     .ingredient__amount {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
         padding-left: 2rem;
     }
 
