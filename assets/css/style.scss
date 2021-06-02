@@ -262,4 +262,8 @@ section {
     width: 560px;
     height: 560px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
