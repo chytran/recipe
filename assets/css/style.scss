@@ -254,3 +254,12 @@ section {
         padding-left: 1rem;
     }
 }
+
+/*=========================== LOGIN ====================================*/
+.login__container {
+    z-index: 1000;
+    background-color: #FFFFFF;
+    width: 560px;
+    height: 560px;
+    border-radius: 5px;
+}
