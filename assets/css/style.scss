@@ -266,4 +266,30 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 80%;
+    }
+
+    .email__container__login, .password__container__login {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        height: 20%;
+    }
+
+    .email, .password {
+        
+    }
+
+    .email__input, .password__input {
+        border: none;
+    }
 }
+
