@@ -393,6 +393,7 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 20%;
+  z-index: 10001;
 }
 
 .login__container .email__input, .login__container .password__input {
