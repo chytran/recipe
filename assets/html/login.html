@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
+    <!-- Browser tab icon -->
     <link rel="icon" href="/">
 
     <!-- CSS -->
@@ -19,29 +20,23 @@
             <img src="/assets/img/Login.jpg" alt="" class="bg__cover">
             <div class="login__container" id="login-container">
                 <form action="" class="form" id="form">
+                    <h1 class="login__title">Log In to Your Account</h1>
                     <div class="email__container__login" id="email-container">
-                        <label for="" class="email">Email Address</label>
                         <div class="email__input__container">
-                            <i class='bx bxs-check-circle' style="color: #121212;"></i>
-                            <input type="text" class="email__input" placeholder="email"></input>
-                        </div>
-                        
+                            <input type="text" class="email__input" placeholder="Email"></input>
+                        </div>  
                     </div>
                     <div class="password__container__login" id="password-container-login">
-                        <label for="" class="password">Password</label>
-                        <input type="text" class="password__input" placeholder="password"></input>
+                        <div class="password__input__container">
+                            <input type="text" class="password__input" placeholder="Password"></input>
+                        </div>
                     </div>
 
-                    <input type="button" class="login__button">Login</input>
+                    <button class="login__button" type="submit">Log in</button>
                 </form>
-                
-                <div class="social__media__container" id="social-media-container">
-                    <div class="facebook__container__login"></div>
-                    <div class="twitter__container__login"></div>
-                    <div class="google__container__login"></div>
-                </div>
 
                 <div class="sign__up" id="sign-up">
+                    <span class="login__signup__text">Need an account?</span>
                     <a href="/assets/html/register.html" class="go__to__registration" id="go-to-registration">Sign up</a>
                 </div>
             </div>
